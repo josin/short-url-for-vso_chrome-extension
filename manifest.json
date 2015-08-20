@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+
+  "name": "Short URL for Visual Studio Online",
+  "description": "This extension converts a long URL of work item in Visual Studio Onine into short URL using http://vso.io service.",
+  "version": "1.0",
+
+  "icons": {
+    "16": "images/icon_link16.png",
+    "48": "images/icon_link48.png",
+    "128": "images/icon_link128.png"
+  },
+
+  "browser_action": {
+    "default_title": "Short URL for Visual Studio Online",
+    "default_popup": "html/popup.html"
+  },
+
+  "background": {
+    "scripts": ["js/core.js", "js/background.js"]
+  },
+
+  "permissions": [
+    "activeTab",
+    "clipboardWrite",
+    "contextMenus"
+  ]
+}
