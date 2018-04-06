@@ -6,7 +6,7 @@
 function parseShortUrl(url) {
   var vsoRegex = /https?:\/\/(.+).visualstudio.com\/.+(?:\/|=)([0-9]+)/g;
   var matches = vsoRegex.exec(url);
-  return "http://" + matches[1] + ".vso.io/" + matches[2];
+  return "https://" + matches[1] + ".vso.io/" + matches[2];
 }
 
 /**
