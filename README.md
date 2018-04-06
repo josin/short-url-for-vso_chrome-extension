@@ -1,6 +1,6 @@
-# Short URL for Visual Studio Online - Chrome Extension
+# Shorten this url with vso.io (Chrome Extension)
 
-Short URL for Visual Studio Online is a Google Chrome Extension which exposes Visual Studio Online shortening service - http://vso.io - into browsers toolbar and context menu.
+Google Chrome Extensions for Visual Studio Online which exposes https://vso.io shortening service into browsers toolbar and context menu.
 
 ## Usage
 

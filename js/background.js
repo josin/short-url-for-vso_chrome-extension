@@ -1,6 +1,6 @@
 // Create context menu
 chrome.contextMenus.create({
-  title: "Shorten Visual Studio Online URL",
+  title: "Shorten this link with vso.io",
   contexts: ["link"],
   onclick: copyShortUrl
 });
