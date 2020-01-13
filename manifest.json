@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
 
-  "name": "Shorten Visual Studio Online URL with vso.io",
-  "description": "Extensions for Visual Studio Online which exposes https://vso.io shortening service into browsers toolbar and context menu.",
-  "version": "1.1",
+  "name": "Shorten Azure DevOps URL with vso.io",
+  "description": "Shorten Azure DevOps (formerly Visual Studio Online) URLs using vso.io shortener.",
+  "version": "1.2",
 
   "icons": {
     "16": "images/icon_link16.png",
