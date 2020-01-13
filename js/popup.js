@@ -5,20 +5,20 @@
  *   is found.
  */
 function getCurrentTabUrl(callback) {
-  var queryInfo = {
-    active: true,
-    currentWindow: true
-  };
+    var queryInfo = {
+        active: true,
+        currentWindow: true
+    };
 
-  chrome.tabs.query(queryInfo, function(tabs) {
-    var tab = tabs[0];
+    chrome.tabs.query(queryInfo, function(tabs) {
+        var tab = tabs[0];
 
-    var url = tab.url;
+        var url = tab.url;
 
-    console.assert(typeof url == 'string', 'tab.url should be a string');
+        console.assert(typeof url == 'string', 'tab.url should be a string');
 
-    callback(url);
-  });
+        callback(url);
+    });
 }
 
 /**
@@ -27,25 +27,24 @@ function getCurrentTabUrl(callback) {
  * @param {string} statusText - text to be rendered.
  */
 function renderStatus(statusText) {
-  document.getElementById('status').textContent = statusText;
+    document.getElementById('status').textContent = statusText;
 }
 
 // Default onload listener for popup
 document.addEventListener('DOMContentLoaded', function() {
-  getCurrentTabUrl(function(url) {
-    try {
-      var vsoShortUrl = parseShortUrl(url);
-      renderStatus("Visual Studio Online Short URL: " + vsoShortUrl);
-    }
-    catch (e) {
-      renderStatus("Invalid Visual Studio Online URL.");
-    }
-  });
-
-  // Add Event Listeners to Button Click
-  document.getElementById("copy").onclick = function() {
     getCurrentTabUrl(function(url) {
-      copyShortUrl(url);
+        try {
+            var vsoShortUrl = parseShortUrl(url);
+            renderStatus('Azure DevOps Short URL: ' + vsoShortUrl);
+        } catch (e) {
+            renderStatus('Invalid Azure DevOps URL.');
+        }
     });
-  };
+
+    // Add Event Listeners to Button Click
+    document.getElementById('copy').onclick = function() {
+        getCurrentTabUrl(function(url) {
+            copyShortUrl(url);
+        });
+    };
 });

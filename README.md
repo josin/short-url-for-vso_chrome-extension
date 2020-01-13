@@ -1,36 +1,20 @@
-# Shorten this url with vso.io (Chrome Extension)
+# URL Shortener for Azure DevOps links (Chrome Extension)
 
-Google Chrome Extensions for Visual Studio Online which exposes https://vso.io shortening service into browsers toolbar and context menu.
+Google Chrome Extensions for Azure DevOps (formerly Visual Studio Online) for shortening full Azure DevOps URLs (i.e. https://contoso.visualstudio.com/DefaultCollection/_workitems/edit/12345) into short URLs via https://vso.io (i.e. http://contoso.vso.io/12345). Extension is available in the context menu and toolbar icon.
 
 ## Usage
 
+### Via Chrome Web Store
+
+Install the extension through [Chrome Web Store](https://chrome.google.com/webstore/detail/shorten-visual-studio-onl/nphkdkljdpnidopchiknkjmbiifgkdmk)
+
+### From repository
+
 - Download / clone this repository
 - Go to Extensions in Chrome browser (`chrome://extensions/`)
-- Enable *Developer mode*
-- *Load unpacked extension* from the folder where it was downloaded
+- Enable `Developer mode`
+- `Load unpacked extension` from the folder where it was downloaded
 
-## License
+## Authors
 
-The MIT License (MIT)
-
-Copyright (c) 2015 Josef Sin
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-
+Authored by [Josef Sin](https://www.linkedin.com/in/josefsin/)
